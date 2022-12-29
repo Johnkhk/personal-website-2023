@@ -9,14 +9,14 @@ function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		// <div>
-			<nav className=" shadow-sm fixed-top w-full z-10">
+			<nav className=" shadow-sm fixed-top w-full z-10 bg-slate-50">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-20  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className=" font-bold text-xl cursor-pointer">
+								<h1 className=" font-semibold text-xl cursor-pointer text-red-400">
 									{/* Stream<span className="text-blue-500">line</span> */}
-									Kwok Hung (John) <span className="text-blue-500"> Ho</span>
+									Kwok Hung <span className="font-extrabold "> Ho</span> (John)
 								</h1>
 							</div>
 							<div className="hidden md:block">

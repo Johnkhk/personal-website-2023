@@ -1,17 +1,24 @@
-import Carousel from "../components/Carousel"
+
+import Topsection from "../components/Topsection"
+import Featured from "../components/Featured"
+import Projects from "../components/Projects"
 export default function Landing() {
     return (
-        <>
-            {/* <div className="block h-80"> */}
-            <div className="block">
-
-            <div className="w-screen flex justify-center">
-                <Carousel>
-
-                </Carousel>
+            <>
+            <div>
+                <div className="mx-8">
+                    <Topsection/>
+                </div>
+                <div className="mx-16">
+                    <Featured/>
+                </div>
+                <div className="mx-16">
+                    <Projects/>
+                </div>
             </div>
-                heythere
-            </div>
-        </>
+            </>
+
     )
 }
+
+

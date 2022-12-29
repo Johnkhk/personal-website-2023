@@ -1,0 +1,14 @@
+{/* <div className="block h-80"> */}
+            {/* <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll">
+                <div className="snap-start">
+                <Topsection/>
+                </div>
+                <div className="snap-start">
+                <Featured/>
+                </div>
+            </div> */}
+
+            {/* <section className="h-screen w-screen overflow-y-scroll snap-mandatory"> */}
+                {/* <Topsection></Topsection> */}
+                {/* <Featured className="snap-start"></Featured> */}
+            {/* </section> */}

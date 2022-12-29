@@ -1,6 +1,6 @@
-import React, { createRef, useState } from 'react';
+import React, { useEffect, createRef, useState, useRef } from 'react';
 // const images = ['https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80', 'https://images.unsplash.com/photo-1523438097201-512ae7d59c44?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80', 'https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80']
-const images = ['/imgs/me/me_NY.png','/imgs/me/mepalmtrees.png', '/imgs/me/meTanky.jpg']
+const images = ['/imgs/me/me_NY.png','/imgs/me/mepalmtrees.png', '/imgs/me/mesnowb.png', '/imgs/me/meTanky.jpg']
 
 // images must be an array of urls , if using Next JS this could something like
 // const images = ['/img/img1.png', '/img/img2.png', '/img/img3.png']
@@ -29,23 +29,24 @@ const Carousel = () => {
     // your current view! To do so we pass an index of the image, which is then use to identify our current
     // image's ref in 'refs' array above.
 
-    // setTimeout(()=>refs[i].current.scrollIntoView({
-    //   //     Defines the transition animation.
-    //   behavior: 'smooth',
-    //   //      Defines vertical alignment.
-    //   block: 'nearest',
-    //   //      Defines horizontal alignment.
-    //   inline: 'start',
-    // }))
+
 
     refs[i].current.scrollIntoView({
+    // refs[i].current.scrollTop({
+
       //     Defines the transition animation.
       behavior: 'smooth',
       //      Defines vertical alignment.
-      block: 'nearest',
+      // block: 'nearest',
+      block: 'end',
+
       //      Defines horizontal alignment.
       inline: 'start',
+      // inline: 'nearest',
     });
+
+
+   
   };
 
   // Some validation for checking the array length could be added if needed
@@ -89,13 +90,48 @@ const Carousel = () => {
     </button>
   );
 
+
+  function useInterval(callback, delay) {
+    const savedCallback = useRef();
+  
+    // Remember the latest callback.
+    useEffect(() => {
+      savedCallback.current = callback;
+    }, [callback]);
+  
+    // Set up the interval.
+    useEffect(() => {
+      function tick() {
+        savedCallback.current();
+      }
+      if (delay !== null) {
+        let id = setInterval(tick, delay);
+        return () => clearInterval(id);
+      }
+    }, [delay]);
+  }
+  function Counter() {
+    let [count, setCount] = useState(0);
+  
+    useInterval(() => {
+      // Your custom logic here
+      nextImage();
+      setCount(count + 1);
+    }, 1000);
+  
+    // return <h1>{count}</h1>;
+  }
+  Counter();
+
+
   return (
   // Images are placed using inline flex. We then wrap an image in a div
   // with flex-shrink-0 to stop it from 'shrinking' to fit the outer div.
   // Finally the image itself will be 100% of a parent div. Outer div is
   // set with position relative, so we can place our cotrol buttons using
   // absolute positioning on each side of the image.
-    <div className="p-12 flex justify-center w-screen md:w-1/2 items-center">
+    // <div className="flex justify-center w-screen md:w-1/2 items-center">
+    <div className="flex justify-end w-3/4 items-center">
       <div className="relative w-full">
         {/* <div className="carousel"> */}
         <div className="inline-flex overflow-x-hidden snap-mandatory snap-x">
@@ -107,7 +143,7 @@ const Carousel = () => {
 
             </div>
           ))}
-          {sliderControl()}
+          {sliderControl(false)}
         </div>
       </div>
     </div>
