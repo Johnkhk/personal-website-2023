@@ -1,49 +1,131 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 // import { Link } from "react-scroll"
-import Link from 'next/link';
+// import Link from 'next/link';
+import {Link} from 'react-scroll';
+
 import Image from "next/image";
 // import Logo from "../public/ML_logo.png";
+import {useRef, useEffect} from 'react';
+import { Button } from "react-scroll";
 
-function Navbar() {
+// import Scroll from 'react-scroll'
+// const ScrollLink = Scroll.ScrollLink
+
+function Navbar(props) {
 	const [isOpen, setIsOpen] = useState(false);
+
+	
+
+	// const scrollClick = (id) => {
+	// 	// ref.current?.scrollIntoView({behavior: 'smooth'});
+	// 	// const anchor = document.querySelector('#experience')
+	// 	// anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+	// 	// console.log("AAA")
+	// 	// window.scrollTo({
+	// 	// 	top: 600,
+	// 	// 	behavior: "smooth"
+	// 	//   });
+	// 	// const id = '#experience';
+	// 	if (typeof window !== "undefined") {
+	// 		// browser code
+	// 		const yOffset = -100; 
+	// 		const element = document.querySelector(id);
+	// 		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+	// 		console.log(y)
+	// 		window.scrollTo({top: y, behavior: 'smooth'});
+	// 	}
+	// };
+
+	// useEffect(function mount() {
+	// 	function scrollClick(id) {
+	// 	//   console.log("scroll!");
+	// 		const yOffset = -100; 
+	// 		const element = document.querySelector(id);
+	// 		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+	// 		console.log(y)
+	// 		window.scrollTo({top: y, behavior: 'smooth'});
+	// 	}
+	
+	// 	window.addEventListener("scroll", scrollClick);
+	
+	// 	return function unMount() {
+	// 	  window.removeEventListener("scroll", scrollClick);
+	// 	};
+	//   });
+
+
+	const navref = useRef()
+
+	const scrollToTop = () => {
+		// console.log("UGDIUSGDIUSDGSIU")
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		  });
+	}
 	return (
 		// <div>
-			<nav className=" shadow-sm fixed-top w-full z-10 bg-slate-50">
+			<nav className=" sticky top-0 z-50 shadow-sm fixed-top w-full z-10 bg-slate-50">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-20  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className=" font-semibold text-xl cursor-pointer text-red-400">
+								<h1 
+								className=" font-semibold text-xl cursor-pointer text-red-400"
+								onClick={scrollToTop}
+								>
 									{/* Stream<span className="text-blue-500">line</span> */}
 									Kwok Hung <span className="font-extrabold "> Ho</span> (John)
 								</h1>
 							</div>
 							<div className="hidden md:block">
 								<div className="ml-10 flex items-baseline space-x-4">
+								{/* <ScrollLink to="example-destination" > */}
 									<Link
-										activeClass="Summarizer"
-                                        href="/summarizer"
-										to="summarizer"
+										// activeClass="Summarizer"
+                                        // href="#experience"
+										// to="summarizer"
+										// onClick={scrollClick("#experience")}
+										to="experience" 
+										spy={true}
 										smooth={true}
-										offset={50}
+										offset={-100}
 										duration={500}
 										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>
-										Summarizer
+										Experience
 									</Link>
 									<Link
-										activeClass="Summarizer"
-                                        href="/workinprogress"
-										to="summarizer"
+										// activeClass="Summarizer"
+                                        // href="#experience"
+										// to="summarizer"
+										// onClick={scrollClick("#experience")}
+										to="projects" 
+										spy={true}
 										smooth={true}
-										offset={50}
+										offset={-100}
 										duration={500}
 										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>
-										Movie-Reccomender
+										Projects
 									</Link>
 									<Link
+										// activeClass="Summarizer"
+                                        // href="#experience"
+										// to="summarizer"
+										// onClick={scrollClick("#experience")}
+										to="courseskills" 
+										spy={true}
+										smooth={true}
+										offset={-100}
+										duration={500}
+										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+									>
+										Courses & Skills
+									</Link>
+									
+									{/* <Link
 										activeClass="contact"
                                         href="https://johnkhk.github.io/portfolio"
 										to="contact"
@@ -53,7 +135,7 @@ function Navbar() {
 										className="cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black"
 									>
 										Contact
-									</Link>
+									</Link> */}
 								</div>
 							</div>
 						</div>

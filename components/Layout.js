@@ -1,7 +1,9 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
+import React, { forwardRef, useRef } from 'react'
 
 export default function Layout({ children }) {
+
   return (
     <>
       <Navbar/>

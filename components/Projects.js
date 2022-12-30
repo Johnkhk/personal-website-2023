@@ -87,7 +87,7 @@ const Projects = () => {
             demolink:"",
             link2:"https://www.youtube.com/watch?v=gsOpZBwbeM0&t=26s&ab_channel=JawnHo",
             code:"",
-            paper:""
+            paper:"https://github.com/Johnkhk/personal-website-2023/blob/main/public/pdfs/ECE268_WI22_P7_KwokHungHo_JesusVillavazoFausto.pdf"
         },
 
     ]
@@ -97,16 +97,17 @@ const Projects = () => {
                 <div className="m-3">
                     <h2 class="text-4xl font-bold dark:text-blue-900">Projects</h2>
                     <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                    <div className="bg-white  shadow-md dark:bg-white dark:border-gray-700 border border-gray-200">
-                        {project_data.map((dat) => (
-                            <Projectcard dat = {dat}/>
-                        ))}
-                        
-                        {/* <Projectcard/>
-                        <Projectcard/>
-                        <Projectcard/> */}
-                    </div>
+                    {/* <div className="h-screen"> */}
+                        <div className="h-full overflow-y-auto mt-8 bg-white  shadow-md dark:bg-white dark:border-gray-700 border border-gray-200">
+                            {project_data.map((dat) => (
+                                <Projectcard dat = {dat}/>
+                            ))}
+                            
+                            {/* <Projectcard/>
+                            <Projectcard/>
+                            <Projectcard/> */}
+                        </div>
+                    {/* </div> */}
                     
                 </div>
             </div>
