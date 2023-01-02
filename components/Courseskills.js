@@ -59,11 +59,11 @@ const Courseskills = () => {
                 <div className="m-3 flex w-full">
                     <div className="w-full">
                         <h2 class="text-4xl font-bold dark:text-blue-900">Courses</h2>
-                        <hr class="w-11/12 my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+                        <hr class="w-11/12 my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
                     </div>
                     <div className="w-full">
                         <h2 class="text-4xl font-bold dark:text-blue-900">Skills</h2>
-                        <hr class="w-11/12 my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+                        <hr class="w-11/12 my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
                     </div>
                 </div>
                 <div className="h-1/2 overflow-y-auto pt-0 flex flex-row justify-between grid grid-cols-12 gap-2">

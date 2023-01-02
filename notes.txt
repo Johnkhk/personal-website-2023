@@ -12,3 +12,6 @@
                 {/* <Topsection></Topsection> */}
                 {/* <Featured className="snap-start"></Featured> */}
             {/* </section> */}
+
+
+                            {/* <div className={`bg-[url(${stra})] bg-cover inline-block col-span-2 inline-block w-full h-full md:w-full md:h-full bg-lime-400 dark:bg-lime-400 top-0 right-0`}> */}

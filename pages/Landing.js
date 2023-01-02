@@ -15,14 +15,9 @@ export default React.forwardRef((props, ref) => {
                 <div className="mx-8">
                     <Topsection/>
                 </div>
-                {/* <Element id="experience" name="experience"> */}
-                    <div className="mx-16" id="experience">
-                        <Featured/>
-                    </div>
-                {/* </Element> */}
-                {/* <Element id="experience" className="mx-16" >
+                <div className="mx-16" id="experience">
                     <Featured/>
-                </Element> */}
+                </div>
                 <div className="mx-16" id="projects">
                     <Projects/>
                 </div>

@@ -59,7 +59,8 @@ function Featured() {
             <div>
                 <div className="m-3">
                     <h2 class="text-4xl font-bold dark:text-blue-900">Featured Experience</h2>
-                    <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+                    <hr class="my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
+
                     
                     <div className="flex flex-row justify-between grid grid-cols-12 gap-2">
                         {/* <div className="flex flex-col p-3 col-span-4">

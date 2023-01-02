@@ -41,14 +41,14 @@ function Topsection() {
                 <div className="flex flex-col p-3 col-span-6">
                     <div className="m-3">
                         <h2 class="text-4xl font-bold dark:text-blue-900">About</h2>
-                        <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+                        <hr class="my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
                         {/* <p class="text-gray-500 dark:text-gray-400"> I am currently a grad student studying Intelligent Systems, Robotics and Control at the University of California San Diego (UCSD). I am also a software engineer experienced in full-stack development, Machine Learning, and Robotics. More than anything else, I love challenging myself. I take pride in going a bit further everyday towards achieving my vision. Time after time, I have achieved personal goals that might otherwise seem impossible with creative planning and relentless execution.</p> */}
                         <p class="text-lg font-serif text-black dark:text-black"> I am currently a grad student studying Intelligent Systems, Robotics and Control at the University of California San Diego (UCSD). I am also a software engineer experienced in full-stack development, Machine Learning, and Robotics. More than anything else, I love challenging myself. I take pride in going a bit further everyday towards achieving my vision. Time after time, I have achieved personal goals that might otherwise seem impossible with creative planning and relentless execution.</p>
 
                     </div>
                     <div className="m-3">
                         <h2 class="text-4xl font-bold dark:text-blue-900">Background</h2>
-                        <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+                        <hr class="my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
                         <p class="text-lg font-serif text-black dark:text-black"> I majored in Electrical Engineering at UCSD before transitioning into a MS student through the BS/MS program. Since then, I have worked in effective teams to relentlessly tackle technical problems, increase business value, and improve customer experience. I continue to rapidly grow with a humble, confident, and open-minded attitude. </p>
                     </div>
                 </div>
