@@ -4,7 +4,7 @@ const Projects = () => {
     const project_data = [
         {
             title:"CryptoTracker.fyi",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/ct.png')]",
             desc: [
                 "MERN stack (Mongo Express React Node) website that tracks Cryptocurrency prices and news. Allows users to sign in and customize their dashboard. Has authenticated routes with JSON Web Tokens, and keeps users logged in with session cookies.",
             ],
@@ -16,7 +16,7 @@ const Projects = () => {
         },
         {
             title:"Text Summarizer",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/ts.png')]",
             desc: [
                 "Created a website that summarizes text using Natural Language Processing (NLP) with Django, SpaCy, and NextJS. Hosted on AWS Elastic Beanstalk and Vercel.",
             ],
@@ -26,7 +26,7 @@ const Projects = () => {
         },
         {
             title:"Polar Coffee",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/polarcollage.jpg')]",
             desc: [
                 "With a team of 4, created an IoT Smart Iced Coffee Machine MVP product. Developed hardware and IoT features, and presented our business plan that won us best startup team project in a class of 200 students.",
             ],
@@ -36,7 +36,7 @@ const Projects = () => {
         },
         {
             title:"Particle Filter SLAM",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/particle.png')]",
             desc: [
                 "Implemented an efficient 2-D particle filter SLAM from scratch using lidar, wheel encoder and gyroscope data from a self-driving car. Also implemented texture mapping collected from stereo cameras. Wrote a paper describing the implementation.",
             ],
@@ -46,10 +46,10 @@ const Projects = () => {
             paper:"https://github.com/Johnkhk/Particle-Filter-Slam-and-Texture-Mapping/blob/main/particle_filter_slam.pdf"
         },
         {
-            title:"EKF SLAM",
-            pic:"",
+            title:"Extended Kalman Filter SLAM",
+            pic:"bg-[url('/imgs/thumbnails/ekf.png')]",
             desc: [
-                "Implemented an efficient Extended Kalman Filter SLAM from scratch using IMU data, and Stereo Camera data from a self-driving car. ",
+                "Implemented an efficient Extended Kalman Filter (EKF) SLAM from scratch using IMU data, and Stereo Camera data from a self-driving car. ",
             ],
             demolink:"",
             link2:"",
@@ -58,9 +58,9 @@ const Projects = () => {
         },
         {
             title:"Galaxian with Haskell",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/galaxian.png')]",
             desc: [
-                "With a group of 4, recreated the famous 1979 arcade game Galaxian to be played in the terminal using Haskell and the Brick library.",
+                "With a group of 4, recreated the famous 1979 arcade game Galaxian to be played in the terminal. Fully developed using functional programming language Haskell and the Brick library.",
             ],
             demolink:"",
             link2:"",
@@ -69,7 +69,7 @@ const Projects = () => {
         },
         {
             title:"Parallel Q-learning with CUDA",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/cuda.png')]",
             desc: [
                 "Implemented asynchronous multi-agent parallel reinforcement learning algorithms: Q-lambda and Q(0)-learning using C/C++ and CUDA. ",
             ],
@@ -80,7 +80,7 @@ const Projects = () => {
         },
         {
             title:"Hardware acc. of Forgery Detection",
-            pic:"",
+            pic:"bg-[url('/imgs/thumbnails/forge.png')]",
             desc: [
                 "With a teammate, used techniques (convolution via FPGA verilog, GPU parralelization CUDA) to accelerate ML algorithms for forgery detection in media with hardware.",
             ],
@@ -100,8 +100,8 @@ const Projects = () => {
                     
                     {/* <div className="h-screen"> */}
                     {/* h-1/2 overflow-y-auto */}
-                        <div className="  mt-8 bg-slate-100  shadow-md dark:bg-slate-100 border-b rounded-lg p-4 dark:border-slate-700 border border-slate-700">
-                            <div className="border border-slate-700 flex flex-col">
+                        <div className="  mt-8 bg-slate-100  shadow-md dark:bg-slate-100 border-b rounded-lg p-6 dark:border-slate-700 border border-slate-700">
+                            <div className="h-5/6 overflow-y-auto border border-slate-700 flex flex-col">
 
                                     {project_data.map((dat) => (
                                         <Projectcard dat = {dat}/>

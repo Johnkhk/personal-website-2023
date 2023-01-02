@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'rayqin': ['"Times New Roman"', 'Times', 'serif']
+    },
     extend: {
       backgroundImage: {
         'wut': "url('https://mdbootstrap.com/img/new/ecommerce/vertical/097.jpg')",

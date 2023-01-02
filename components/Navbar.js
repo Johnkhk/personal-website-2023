@@ -124,6 +124,21 @@ function Navbar(props) {
 									>
 										Courses & Skills
 									</Link>
+
+									<Link
+										// activeClass="Summarizer"
+                                        // href="#experience"
+										// to="summarizer"
+										// onClick={scrollClick("#experience")}
+										to="courseskills" 
+										spy={true}
+										smooth={true}
+										offset={-100}
+										duration={500}
+										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+									>
+										Resume
+									</Link>
 									
 									{/* <Link
 										activeClass="contact"

@@ -3,6 +3,8 @@ import Topsection from "../components/Topsection"
 import Featured from "../components/Featured"
 import Projects from "../components/Projects"
 import Courseskills from "../components/Courseskills"
+import Resume from "../components/Resume"
+
 import { Element } from 'react-scroll'
 import React from "react"
 // export default function Landing() {
@@ -23,6 +25,9 @@ export default React.forwardRef((props, ref) => {
                 </div>
                 <div className="mx-16" id="courseskills">
                     <Courseskills/>
+                </div>
+                <div className="mx-16" id="resume">
+                    <Resume/>
                 </div>
             </div>
             </>

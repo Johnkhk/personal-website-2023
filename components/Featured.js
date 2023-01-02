@@ -1,16 +1,18 @@
 import Carousel from "../components/Carousel"
 import Card from "./Card";
+import Cardbefore from "./Cardbefore";
+
 function Featured() {
 
     const exp_text = {
         threed: {
-            title:"Data Scientist Intern @3D Systems",
+            title:"Data Scientist @3D Systems",
             date:"Jun 2022 - Sep 2022",
             work: [
                 "Full-stack development of internal tools used by bioprinting R&D teams. ",
-                "Met multiple Q3 OKRs by improved current ETL pipelines and the monitoring infrastructure across large-scale distributed backend components.",
                 "Created a fleet-monitoring system for all 3D bioprinters. Team members reported saving 30 minutes a day of traversal time to the lab.",
-                "Integrated an auto-focus prgoram into firmware for 3D bioprinters, removing risk of error from manual focus and reducing focusing time from 1 hour to 5 minutes."
+                "Integrated an auto-focus prgoram into firmware for 3D bioprinters, removing risk of error from manual focus and reducing focusing time from 1 hour to 5 minutes.",
+                "Met multiple Q3 OKRs by improving current ETL pipelines and monitoring infrastructure across large-scale distributed backend components.",
             ],
             logo:"/imgs/companies/3ds_logo.png"
         },
@@ -37,7 +39,7 @@ function Featured() {
             title:"Software Engineer @ASTRI",
             date:"Jun 2019 - Sep 2019",
             work: [
-                "Developed an augmented reality application forthe Microsoft HoloLens with Unity (C#) which allows the userto spawn objects via hand gestures on top of AR tags, allowing one to digitally tourthe layout of our autonomous warehouse.",
+                "Developed an augmented reality application for the Microsoft HoloLens with Unity (C#) which allows the user to spawn objects via hand gestures on top of AR tags allowing one to digitally tour the layout of our autonomous warehouse.",
             ],
             logo:"/imgs/companies/astri_logo2.jpeg"
         },
@@ -45,8 +47,8 @@ function Featured() {
             title:"Research Assistant @UCSD ARCLAB",
             date:"Jan 2022 - Jun 2022",
             work: [
-                "Worked with CT/MR compatible needle insertion robotics under Prof Michael Yip and PhD student Dimitri Schreiber. ",
-                "Performed data augmentation on DICOM images and training tumor and lung image segmentation using Tensorflow and MaskRCNN. ",
+                "Worked with CT/MR compatible needle insertion robotics under professor Michael Yip and PhD student Dimitri Schreiber. ",
+                "Performed data augmentation on DICOM images for training tumor and lung image segmentation using Tensorflow and MaskRCNN. ",
                 "Created 3-D visualization pipelines during inference. ",
             ],
             logo:"/imgs/companies/arclab.png"
@@ -58,28 +60,14 @@ function Featured() {
             <div className="mx-0">
             <div>
                 <div className="m-3">
-                    <h2 class="text-4xl font-bold dark:text-blue-900">Featured Experience</h2>
+                    <h2 class="text-4xl font-bold dark:text-blue-900">Featured Experiences</h2>
                     <hr class="my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
 
                     
-                    <div className="flex flex-row justify-between grid grid-cols-12 gap-2">
-                        {/* <div className="flex flex-col p-3 col-span-4">
-                            <Card picpath={"/imgs/companies/3ds_logo.png"}/>
-                        </div>
-                        <div className="flex flex-col p-3 col-span-4">
-                            <Card picpath={"/imgs/companies/appt.png"}/>
-                        </div>
-                        <div className="flex flex-col p-3 col-span-4">
-                            <Card picpath={"/imgs/companies/risksis_logo.png"}/>
-                        </div>
-                        <div className="flex flex-col p-3 col-span-4">
-                            <Card picpath={"/imgs/companies/astri_logo2.jpeg"}/>
-                        </div>
-                        <div className="flex flex-col p-3 col-span-4">
-                            <Card picpath={"/imgs/companies/arclab.png"}/>
-                        </div> */}
+                    <div className="flex flex-row justify-between grid grid-cols-12 gap-6">
+
                         { Object.keys(exp_text).map((item, i) => (
-                                <div className="flex flex-row justify-center p-3 col-span-4">
+                                <div className="flex flex-row justify-center p-3 col-span-4 md:col-span-4">
                                     <Card dat = {exp_text[item]}/>
                                 </div>
                         ))}
