@@ -7,7 +7,7 @@ const Card = (props) => {
     return (
         // <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="">
-            <div className="bg-white  shadow-md dark:bg-white dark:border-gray-700 border border-gray-200 rounded-lg overflow-hidden">
+            <div className="bg-white  shadow-md dark:bg-white dark:border-gray-300 border border-gray-200 rounded-lg overflow-hidden">
             <a href="#">
                 <div className="w-full inline-block	">
                 {/* <img class="rounded-t-lg" src="/imgs/companies/apptech_logo.png" alt="" /> */}
@@ -21,10 +21,10 @@ const Card = (props) => {
                 </a>
 
                 <div className="flex pb-3">
-                    <ul className="w-full text-sm font-medium text-gray-900 bg-white rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 dark:bg-white dark:text-black">
+                    <ul className="w-full text-sm font-medium text-gray-900 bg-white rounded-lg overflow-hidden border border-gray-200 dark:border-gray-300 dark:bg-white dark:text-black">
                     {
                         work.map(bullet => 
-                            <li className="font-rayqin text-lg py-2 px-4 w-full bg-stone-100 border-b last:border-b-0 border-gray-200 dark:border-gray-600"> 
+                            <li className="font-rayqin text-lg py-2 px-4 w-full bg-stone-100 border-b last:border-b-0 border-gray-200 dark:border-gray-300"> 
                                 {bullet}
                             </li>
                             )

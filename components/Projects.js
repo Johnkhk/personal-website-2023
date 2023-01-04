@@ -100,8 +100,8 @@ const Projects = () => {
                     
                     {/* <div className="h-screen"> */}
                     {/* h-1/2 overflow-y-auto */}
-                        <div className="  mt-8 bg-slate-100  shadow-md dark:bg-slate-100 border-b rounded-lg p-6 dark:border-slate-700 border border-slate-700">
-                            <div className="h-5/6 overflow-y-auto border border-slate-700 flex flex-col">
+                        <div className="  mt-8 bg-slate-100  shadow-md dark:bg-slate-100 border-b rounded-lg p-6 dark:border-slate-200 border border-slate-200">
+                            <div className="h-5/6 overflow-y-auto border border-slate-200 flex flex-col">
 
                                     {project_data.map((dat) => (
                                         <Projectcard dat = {dat}/>

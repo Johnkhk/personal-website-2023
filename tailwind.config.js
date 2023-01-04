@@ -6,7 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'rayqin': ['"Times New Roman"', 'Times', 'serif']
+      'rayqin': ['"Times New Roman"', 'Times', 'serif'],
+      'quote': 'Monaco'
     },
     extend: {
       backgroundImage: {

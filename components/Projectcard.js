@@ -26,7 +26,7 @@ const Projectcard = (props) => {
 
     
     return (
-        <div className="mx-auto w-full text-sm font-medium text-gray-900 bg-white border-b last:border-b-0 border-gray-200 dark:bg-white dark:border-gray-600 dark:text-black">
+        <div className="mx-auto w-full text-sm font-medium text-gray-900 bg-white border-b last:border-b-0 border-gray-200 dark:bg-white dark:border-gray-200 dark:text-black">
             <section className="text-gray-800 text-center md:text-left">
                 <div className="block shadow-lg bg-white hover:bg-gray-100 hover:shadow-lg focus:bg-gray-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-200 active:shadow-lg transition duration-150 ease-in-out">
                     <div className="flex flex-row items-center overflow-hidden relative">
