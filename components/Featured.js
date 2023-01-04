@@ -64,10 +64,10 @@ function Featured() {
                     <hr class="my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
 
                     
-                    <div className="flex flex-row justify-between grid grid-cols-12 gap-6">
+                    <div className="md:flex md:flex-row md:justify-between md:grid md:grid-cols-12 md:gap-6">
 
                         { Object.keys(exp_text).map((item, i) => (
-                                <div key={exp_text[item].title} className="flex flex-row justify-center p-3 col-span-4 md:col-span-4">
+                                <div key={exp_text[item].title} className="md:flex md:flex-row md:justify-center p-3 md:col-span-4 md:col-span-4">
                                     <Card dat = {exp_text[item]}/>
                                 </div>
                         ))}

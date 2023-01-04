@@ -16,22 +16,22 @@ export default function Landing() {
     return (
             <>
             <div className="">
-                <div className="mx-64">
+                <div className="mx-3 md:mx-64">
                     <Topsection/>
                 </div>
-                <div className="mx-64 mt-16" id="experience">
+                <div className="mx-3 md:mx-64 mt-16" id="experience">
                     <Featured/>
                 </div>
-                <div className="mx-64 mt-16" id="projects">
+                <div className="mx-3 md:mx-64 mt-16" id="projects">
                     <Projects/>
                 </div>
-                <div className="mx-64 mt-16" id="courseskills">
+                <div className="mx-3 md:mx-64 mt-16" id="courseskills">
                     <Courseskills/>
                 </div>
-                <div className="mx-64 mt-16" id="resume">
+                <div className="mx-3 md:mx-64 mt-16" id="resume">
                     <Resume/>
                 </div>
-                <div className="mx-64 mt-16" id="contact">
+                <div className="mx-3 md:mx-64 mt-16" id="contact">
                     <Contact/>
                 </div>
             </div>

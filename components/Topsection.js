@@ -5,17 +5,20 @@ import { Carousel } from 'react-responsive-carousel';
 
 function Topsection() {
     const images = ['/imgs/me/me_NY.png','/imgs/me/mepalmtrees.png', '/imgs/me/mesnowb.png', '/imgs/me/meTanky.jpg']
+    
+    // const isMobile = window.innerWidth <= 768;
+    const isMobile = false;
+
+
+    if (!isMobile) {
+
     return (
         <div className="block h-full">
             <div className="mx-0">
-            <div className="grid grid-cols-10 gap-2">
-                {/* <div className="w-screen flex justify-center"> */}
-                <div className=" flex flex-row justify-end p-3 col-span-4 h-full">
-                {/* <div className=" flex flex-row justify-center p-3 col-span-4 h-full"> */}
-
-                    {/* <Carousel/> */}
-                    <div className="p-3 w-9/12 h-full flex flex-row items-end">
-                        <Carousel showThumbs={false} interval={3000} autoPlay={true} infiniteLoop={true} showStatus={false} showIndicators={false} dynamicHeight={false}>
+            <div className="md:grid md:grid-cols-10 md:gap-2 ">
+                <div className=" md:flex md:flex-row md:justify-end md:p-3 md:col-span-4 md:h-full">
+                    <div className="w-full md:p-3 md:w-9/12 md:h-full md:flex md:flex-row md:items-end">
+                        <Carousel className="" showThumbs={false} interval={3000} autoPlay={true} infiniteLoop={true} showStatus={false} showIndicators={false} dynamicHeight={false}>
                             <div>
                                 <img src={images[0]} />
                                 {/* <p className="legend">Legend 1</p> */}
@@ -55,6 +58,10 @@ function Topsection() {
             </div>
             </div>
         </div>
-    )
+    )} else {
+        return (
+            <div> HEY HEY HEY</div>
+        )
+    }
 }
 export default Topsection;
