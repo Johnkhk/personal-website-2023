@@ -65,7 +65,7 @@ const Projectcard = (props) => {
                                         </h2>
                                         {
                                             demolink &&
-                                            <a target="_blank" href={demolink}> 
+                                            <a target="blank" href={demolink}> 
                                                 <button type="button"
                                                 className="mb-3  mx-2 px-7 py-3 bg-blue-500 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
                                                 data-mdb-ripple="true" data-mdb-ripple-color="light">Demo</button>
@@ -73,7 +73,7 @@ const Projectcard = (props) => {
                                         }
                                         {
                                             link2 && 
-                                            <a target="_blank" href={link2}> 
+                                            <a target="blank" href={link2}> 
                                                 <button type="button"
                                                 className="mb-3  mx-2 px-7 py-3 bg-blue-500 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
                                                 data-mdb-ripple="true" data-mdb-ripple-color="light">Presentation</button>
@@ -81,7 +81,7 @@ const Projectcard = (props) => {
                                         }
                                         {
                                             code && 
-                                            <a target="_blank" href={code}> 
+                                            <a target="blank" href={code}> 
                                                 <button type="button"
                                                 className="mb-3  mx-2 px-7 py-3 bg-blue-500 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
                                                 data-mdb-ripple="true" data-mdb-ripple-color="light">Code</button>
@@ -89,7 +89,7 @@ const Projectcard = (props) => {
                                         }
                                         {
                                             paper && 
-                                            <a target="_blank" href={code}> 
+                                            <a target="blank" href={code}> 
                                                 <button type="button"
                                                 className="mb-3  mx-2 px-7 py-3 bg-blue-500 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
                                                 data-mdb-ripple="true" data-mdb-ripple-color="light">Paper</button>

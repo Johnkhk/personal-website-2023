@@ -24,7 +24,7 @@ const Card = (props) => {
                     <ul className="w-full text-sm font-medium text-gray-900 bg-white rounded-lg overflow-hidden border border-gray-200 dark:border-gray-300 dark:bg-white dark:text-black">
                     {
                         work.map(bullet => 
-                            <li className="font-rayqin text-lg py-2 px-4 w-full bg-stone-100 border-b last:border-b-0 border-gray-200 dark:border-gray-300"> 
+                            <li key={bullet} className="font-rayqin text-lg py-2 px-4 w-full bg-stone-100 border-b last:border-b-0 border-gray-200 dark:border-gray-300"> 
                                 {bullet}
                             </li>
                             )

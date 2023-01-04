@@ -4,6 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 function Footer() {
+	const word1 = "© 2022 All rights reserved | "
+	const quot = "\"Learning is like rowing upstream: not to advance is to drop back.\""
 	return (
 		<>
         {/* <div className="fixed-bottom"> */}
@@ -12,7 +14,7 @@ function Footer() {
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
 							{/* Cloud<span className="text-blue-600">Inference</span> */}
-							<span className="text-blue-600 font-quote text-sm">"Learning is like rowing upstream: not to advance is to drop back."</span> 
+							<span className="text-blue-600 font-quote text-sm">{quot}</span> 
 						</p>
 						<div className="flex gap-6 pb-5 items-center justify-center">
 							<a href="https://www.linkedin.com/in/johnkhho/">
@@ -85,7 +87,8 @@ function Footer() {
 			</div>
 			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
 				<h1 className=" text-gray-800 font-semibold">
-					© 2022 All rights reserved |{"  "}
+					{/* © 2022 All rights reserved |{"  "} */}
+					{word1}
 					<span className="hover:text-blue-600 font-semibold cursor-pointer">
 						Kwok Hung Ho{" "}
 					</span>
