@@ -9,8 +9,8 @@ import Contact from "../components/Contact"
 
 // import { Element } from 'react-scroll'
 import React from "react"
-// export default function Landing() {
-export default React.forwardRef((props, ref) => { 
+export default function Landing() {
+// export default React.forwardRef((props, ref) => { 
 
     // const { ref1, ref2, ref3 } = ref;
     return (
@@ -38,6 +38,6 @@ export default React.forwardRef((props, ref) => {
             </>
 
     )
-})
+}
 
 

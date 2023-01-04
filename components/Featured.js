@@ -1,6 +1,6 @@
 import Carousel from "../components/Carousel"
 import Card from "./Card";
-import Cardbefore from "./Cardbefore";
+// import Cardbefore from "./Cardbefore";
 
 function Featured() {
 
@@ -67,7 +67,7 @@ function Featured() {
                     <div className="flex flex-row justify-between grid grid-cols-12 gap-6">
 
                         { Object.keys(exp_text).map((item, i) => (
-                                <div className="flex flex-row justify-center p-3 col-span-4 md:col-span-4">
+                                <div key={exp_text[item].title} className="flex flex-row justify-center p-3 col-span-4 md:col-span-4">
                                     <Card dat = {exp_text[item]}/>
                                 </div>
                         ))}

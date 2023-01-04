@@ -104,7 +104,7 @@ const Projects = () => {
                             <div className="h-5/6 overflow-y-auto border border-slate-200 flex flex-col">
 
                                     {project_data.map((dat) => (
-                                        <Projectcard dat = {dat}/>
+                                        <Projectcard key={dat.title} dat = {dat}/>
                                     ))}
                                    
                                 {/* <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
