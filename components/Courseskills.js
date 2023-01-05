@@ -55,19 +55,80 @@ const Courseskills = () => {
 
     return (
             <>
-            <div className="mt-6 h-full pb-6">
-                <div className="m-3 flex w-full">
+            <div className="flex justify-center md:block mt-6 h-full pb-6">
+                <div className="m-3 md:flex w-full">
                     <div className="w-full">
                         <h2 class="text-4xl font-bold dark:text-blue-900">Courses</h2>
                         <hr class="w-11/12 my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
+
+                        {/* hidden */}
+                        <div className="md:hidden flex flex-row justify-center p-3 h-fit">
+                            <div class="flex justify-center">
+                                <ul class="h-96 overflow-y-auto bg-white rounded-lg border border-gray-400 w-full text-gray-900">
+                                    <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full ">Graduate Courses</li>
+                                    {
+                                        gcourses.map(dat => 
+                                            <li key={dat.title} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg"><span className="font-bold">{dat.ser}</span>{dat.title}</li>
+                                        )
+                                    }
+                                    {/* <li class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg">An item</li> */}
+                                    <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full">Undergraduate Courses</li>
+                                    {
+                                        ucourses.map(dat => 
+                                            <li key={dat.title} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg"><span className="font-bold">{dat.ser}</span>{dat.title}</li>
+                                        )
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                     <div className="w-full">
                         <h2 class="text-4xl font-bold dark:text-blue-900">Skills</h2>
                         <hr class="w-11/12 my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>
+
+                        <div className="md:hidden flex flex-row justify-start p-3 md:col-span-6 h-fit">
+                            <div class="flex justify-start">
+                                <ul class="h-96 overflow-y-scroll bg-white rounded-lg border border-gray-400 w-full text-gray-900">
+                                    <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full ">Progamming Languages</li>
+                                    {
+                                        pskills1.map(dat => 
+                                            <li key={dat} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg"><span className="font-bold">{"Strong: "}</span>{dat}</li>
+                                        )
+                                    }
+                                    {
+                                        pskills2.map(dat => 
+                                            <li key={dat} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg"><span className="font-bold">{"Familiar: "}</span>{dat}</li>
+                                        )
+                                    }
+                                    {/* <li class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg">An item</li> */}
+                                    <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full">Web Development</li>
+                                    {
+                                        webdev.map(dat => 
+                                            <li key={dat} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg">{dat}</li>
+                                        )
+                                    }
+                                    <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full">Tools & Frameworks</li>
+                                    {
+                                        toolsf.map(dat => 
+                                            <li key={dat} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg">{dat}</li>
+                                        )
+                                    }
+                                    <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full">Math & Machine Learning & Artificial Intelligence</li>
+                                    {
+                                        ml.map(dat => 
+                                            <li key={dat} class="hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-200 w-full rounded-t-lg">{dat}</li>
+                                        )
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div className="pt-0 flex flex-row justify-between grid grid-cols-12 gap-2">
-                    <div className="flex flex-row justify-start p-3 col-span-6 h-fit">
+                <div className="pt-0 flex flex-row justify-between md:grid md:grid-cols-12 md:gap-2">
+
+                    <div className="hidden md:block flex flex-row justify-start p-3 md:col-span-6 h-fit">
                         <div class="flex justify-start">
                             <ul class="h-96 overflow-y-auto bg-white rounded-lg border border-gray-400 w-4/6 text-gray-900">
                                 <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full ">Graduate Courses</li>
@@ -87,7 +148,7 @@ const Courseskills = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-start p-3 col-span-6 h-fit">
+                    <div className="hidden md:block flex flex-row justify-start p-3 md:col-span-6 h-fit">
                         <div class="flex justify-start">
                             <ul class="h-96 overflow-y-scroll bg-white rounded-lg border border-gray-400 w-4/6 text-gray-900">
                                 <li class="bg-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer px-6 py-2 border-b border-gray-400 w-full ">Progamming Languages</li>

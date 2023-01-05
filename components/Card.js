@@ -8,12 +8,12 @@ const Card = (props) => {
         // <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="">
             <div className="bg-white  shadow-md dark:bg-white dark:border-gray-300 border border-gray-200 rounded-lg overflow-hidden">
-            <a href="#">
+            {/* <a href="#"> */}
                 <div className="w-full inline-block	">
                 {/* <img class="rounded-t-lg" src="/imgs/companies/apptech_logo.png" alt="" /> */}
                     <img className="w-full rounded-t-lg" src={picpath} alt="" />
                 </div>
-            </a>
+            {/* </a> */}
             
             <div className="w-full p-5 bg-slate-100 inline-block">
                 <a href="#">

@@ -17,43 +17,6 @@ function Navbar(props) {
 
 	
 
-	// const scrollClick = (id) => {
-	// 	// ref.current?.scrollIntoView({behavior: 'smooth'});
-	// 	// const anchor = document.querySelector('#experience')
-	// 	// anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
-	// 	// console.log("AAA")
-	// 	// window.scrollTo({
-	// 	// 	top: 600,
-	// 	// 	behavior: "smooth"
-	// 	//   });
-	// 	// const id = '#experience';
-	// 	if (typeof window !== "undefined") {
-	// 		// browser code
-	// 		const yOffset = -100; 
-	// 		const element = document.querySelector(id);
-	// 		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-	// 		console.log(y)
-	// 		window.scrollTo({top: y, behavior: 'smooth'});
-	// 	}
-	// };
-
-	// useEffect(function mount() {
-	// 	function scrollClick(id) {
-	// 	//   console.log("scroll!");
-	// 		const yOffset = -100; 
-	// 		const element = document.querySelector(id);
-	// 		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-	// 		console.log(y)
-	// 		window.scrollTo({top: y, behavior: 'smooth'});
-	// 	}
-	
-	// 	window.addEventListener("scroll", scrollClick);
-	
-	// 	return function unMount() {
-	// 	  window.removeEventListener("scroll", scrollClick);
-	// 	};
-	//   });
-
 
 	const navref = useRef()
 
@@ -117,6 +80,7 @@ function Navbar(props) {
 										offset={-100}
 										duration={500}
 										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+										// onClick={() => setIsOpen(false)}
 									>
 										Courses & Skills
 									</Link>
@@ -211,10 +175,10 @@ function Navbar(props) {
 
 				<Transition
 					show={isOpen}
-					enter="transition ease-out duration-100 transform"
+					enter="transition ease-out duration-150 transform"
 					enterFrom="opacity-0 scale-95"
 					enterTo="opacity-100 scale-100"
-					leave="transition ease-in duration-75 transform"
+					leave="transition ease-in duration-150 transform"
 					leaveFrom="opacity-100 scale-100"
 					leaveTo="opacity-0 scale-95"
 				>
@@ -242,6 +206,7 @@ function Navbar(props) {
 										offset={-100}
 										duration={500}
 										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+										onClick={() => setIsOpen(!isOpen)}
 									>
 										Experience
 									</Link>
@@ -256,6 +221,7 @@ function Navbar(props) {
 										offset={-100}
 										duration={500}
 										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+										onClick={() => setIsOpen(!isOpen)}
 									>
 										Projects
 									</Link>
@@ -270,6 +236,7 @@ function Navbar(props) {
 										offset={-100}
 										duration={500}
 										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+										onClick={() => setIsOpen(!isOpen)}
 									>
 										Courses & Skills
 									</Link>
@@ -285,6 +252,7 @@ function Navbar(props) {
 										offset={-100}
 										duration={500}
 										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+										onClick={() => setIsOpen(!isOpen)}
 									>
 										Resume
 									</Link>
@@ -297,6 +265,7 @@ function Navbar(props) {
 										offset={-100}
 										duration={500}
 										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+										onClick={() => setIsOpen(!isOpen)}
 									>
 										Contact
 									</Link>
