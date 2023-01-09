@@ -5,19 +5,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    width: {
-      'spec': '1000px',
-      'carousel1': '300px',
-    },
-    maxWidth: {
-      '1/2': '50%',
-      'rqmax': 'min(95%, 750px)',
-    },
-    minWidth: {
-      // '1/2': '50%',
-      'rqmin': '40%',
-      'car': '210',
-    },
     fontFamily: {
       'rayqin': ['"Times New Roman"', 'Times', 'serif'],
       'quote': 'Monaco'
