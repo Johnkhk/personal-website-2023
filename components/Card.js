@@ -3,7 +3,7 @@ const Card = (props) => {
     const title = props.dat.title
     const date = props.dat.date
     const work = props.dat.work
-    console.log(props.dat)
+    // console.log(props.dat)
     return (
         // <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="">

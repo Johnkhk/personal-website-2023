@@ -12,15 +12,32 @@ function Topsection() {
 
     if (!isMobile) {
 
+    const uh = {"max-width": "min(95%, 750px)", "min-width": "40%"}
+    // const ok = {}
+//className="m-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    
     return (
-        <div className="block h-full">
+        // <div style={uh} className="block h-full">
+        // <div className="block h-full max-w-rqmax min-w-rqmin">
+        // <div className="block h-full w-full flex flex-col justify-center">
+        <div className="block h-full w-full">
+
+            
+
+            {/* <div className="mx-0 container"> */}
             <div className="mx-0">
             <div className="md:grid md:grid-cols-10 md:gap-2 ">
-                <div className=" md:flex md:flex-row md:justify-end md:p-3 md:col-span-4 md:h-full">
-                    <div className="w-full md:p-3 md:w-9/12 md:h-full md:flex md:flex-row md:items-end">
-                        <Carousel className="" showThumbs={false} interval={3000} autoPlay={true} infiniteLoop={true} showStatus={false} showIndicators={false} dynamicHeight={false}>
-                            <div>
+                {/* <div className=" md:flex md:flex-row md:justify-end md:p-3 md:col-span-4 md:h-full"> */}
+                <div className="flex flex-col justify-center md:p-3 md:col-span-5 xl:col-span-3 md:h-full ">
+                    {/* <div className="w-full md:p-3 md:w-9/12 md:h-full md:flex md:flex-row md:items-end"> */}
+                    {/* <div className="container min-w-rqmin max-w-rqmax bg-red-800"> */}
+                    {/* <div className="mx-auto max-w-screen-sm bg-red-800"> */}
+                    {/* <div className="container min-w-rqmin max-w-rqmax bg-blue-800"> */}
+                    <div className="">
+                        <Carousel className="h-full flex justify-center" width={"100%"} showThumbs={false} interval={3000} autoPlay={true} infiniteLoop={true} showStatus={false} showIndicators={false} dynamicHeight={false} >
+                            <div className="h-full">
                                 <img src={images[0]} />
+                                {/* <img className="w-spec" style={{marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center"}} src={images[0]} /> */}
                                 {/* <p className="legend">Legend 1</p> */}
                             </div>
                             <div>
@@ -41,7 +58,7 @@ function Topsection() {
                 {/* <div className="w-screen flex justify-center">
                     <Carousel/>
                 </div> */}
-                <div className="flex flex-col p-3 col-span-6">
+                <div className="flex flex-col p-3 md:col-span-5 xl:col-span-7">
                     <div className="m-3">
                         <h2 class="text-4xl font-bold dark:text-blue-900">About</h2>
                         <hr class="my-4 h-px bg-slate-300 border-0 dark:bg-slate-300"/>

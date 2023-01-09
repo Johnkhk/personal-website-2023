@@ -1,6 +1,5 @@
 // import {Link} from 'react-router-dom'
 const Projectcard = (props) => {
-    console.log(props.dat.title)
     const title = props.dat.title
     const desc = props.dat.desc
     const demolink = props.dat.demolink
