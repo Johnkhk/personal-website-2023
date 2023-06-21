@@ -1,8 +1,3 @@
-const LinkToCompany = (link) => {
-    // Navigate to the website when the div is clicked
-    window.location.href = link;
-};
-
 const Card = (props) => {
     const picpath = props.dat.logo;
     const title = props.dat.title
@@ -12,9 +7,8 @@ const Card = (props) => {
     // console.log(props.dat)
     return (
         // <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-        //onClick={LinkToCompany(company_website)} 
         <div className="">
-            <a href={company_website} target="_blank" rel="noopener">
+            <a href={company_website} target="_blank" rel="noreferrer">
             <div className="hover:scale-105 transition-transform duration-300 bg-white shadow-2xl dark:bg-white dark:border-gray-300 border border-gray-200 rounded-lg overflow-hidden">
                 <div className="w-full inline-block	">
                     <img className="w-full rounded-t-lg" src={picpath} alt="" />
