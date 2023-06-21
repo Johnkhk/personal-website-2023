@@ -1,24 +1,27 @@
+const LinkToCompany = (link) => {
+    // Navigate to the website when the div is clicked
+    window.location.href = link;
+};
+
 const Card = (props) => {
     const picpath = props.dat.logo;
     const title = props.dat.title
     const date = props.dat.date
     const work = props.dat.work
+    const company_website = props.dat.company_website
     // console.log(props.dat)
     return (
         // <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        //onClick={LinkToCompany(company_website)} 
         <div className="">
-            <div className="bg-white  shadow-md dark:bg-white dark:border-gray-300 border border-gray-200 rounded-lg overflow-hidden">
-            {/* <a href="#"> */}
+            <a href={company_website} target="_blank">
+            <div className="hover:scale-105 transition-transform duration-300 bg-white shadow-2xl dark:bg-white dark:border-gray-300 border border-gray-200 rounded-lg overflow-hidden">
                 <div className="w-full inline-block	">
-                {/* <img class="rounded-t-lg" src="/imgs/companies/apptech_logo.png" alt="" /> */}
                     <img className="w-full rounded-t-lg" src={picpath} alt="" />
                 </div>
-            {/* </a> */}
-            
-            <div className="w-full p-5 bg-slate-100 inline-block">
-                <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-rose-500 ">{props.dat.title}</h5>
-                </a>
+            <div className="w-full p-5 bg-slate-100 inline-block ">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-rose-500 ">{props.dat.title}</h5>
+                <h5 className="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-blue-500 ">{props.dat.date}</h5>
 
                 <div className="flex pb-3">
                     <ul className="w-full text-sm font-medium text-gray-900 bg-white rounded-lg overflow-hidden border border-gray-200 dark:border-gray-300 dark:bg-white dark:text-black">
@@ -40,6 +43,7 @@ const Card = (props) => {
                 </a> */}
             </div>
             </div>
+            </a>
         </div>
     )
 }

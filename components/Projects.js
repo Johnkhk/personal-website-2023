@@ -3,16 +3,34 @@ const Projects = () => {
     
     const project_data = [
         {
+            title:"Fault Tolerant & Scalable SurfStore",
+            pic:"bg-[url('/imgs/thumbnails/raft.png')]",
+            desc: [
+                "The Fault Tolerant and Scalable Surfstore project combines the Raft consensus algorithm for fault tolerance, availability, and consistency of the metadata service, along with consistent hashing on multiple blockstores for efficient load balancing and distribution of data in a distributed storage system.",
+            ],
+            demolink:"",
+            link2:"",
+            code:"https://github.com/Johnkhk/Fault-Tolerant-and-Scalable-SurfStore"
+        },
+        {
+            title:"SurfStore (Drop Box Clone)",
+            pic:"bg-[url('/imgs/thumbnails/surf_store_pic.png')]",
+            desc: [
+                "SurfStore is a blob cloud storage distrubted system service fully written in Go using gRPC. (Similar to Drop Box). It uses MetaStore to store metadata and a BlockStore to store blob data.",
+            ],
+            demolink:"",
+            link2:"",
+            code:"https://github.com/Johnkhk/Surf-Store"
+        },
+        {
             title:"CryptoTracker.fyi",
             pic:"bg-[url('/imgs/thumbnails/ct.png')]",
             desc: [
-                "MERN stack (Mongo Express React Node) website that tracks Cryptocurrency prices and news. Allows users to sign in and customize their dashboard. Has authenticated routes with JSON Web Tokens, and keeps users logged in with session cookies.",
+                "MERN stack (Mongo Express React Node) website that tracks Cryptocurrency prices and news. The site allows users to sign in and customize their dashboard of crypto currencies and has authenticated routes with JSON Web Tokens. It also keeps users logged in with session cookies. And stores passwords safely using bcrypt.",
             ],
             demolink:"https://www.cryptotracker.fyi/",
             link2:"",
             code:""
-
-
         },
         {
             title:"Text Summarizer",
