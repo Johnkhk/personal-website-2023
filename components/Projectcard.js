@@ -83,7 +83,7 @@ const Projectcard = (props) => {
                                     </div>
                                     {/* <p className="mx-4 text-gray-500 mb-3 "> */}
                                     <p className="mx-4 text-black-500 mb-3 text-sm">
-                                    {desc}
+                                    {desc.join('\n')}
                                     </p>
                                     
                                 </div>
