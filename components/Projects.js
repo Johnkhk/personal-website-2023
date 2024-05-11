@@ -3,16 +3,16 @@ const Projects = () => {
     
     const project_data = [
         {
-            title: "CareerCraftAI",
+            title: "ProApplyAI",
             pic:"bg-[url('/imgs/thumbnails/ccai.png')]",
             desc: [
-                "CareerCraftAI is a web application that uses AI to write personalized cover letters.",
+                "ProApplyAI is a web application that uses AI to write personalized cover letters.",
                 "The webapp simplifies the cover letter writing process to merely pasting the job details",
                 "The technology stack includes NextJS, Redux, and TailwindCSS for the frontend, and FastAPI, Langchain, and ReportLab for the backend.",
                 "MongoDB is the primary database and GCS is used for document storage. The frontend is hosted on Vercel and the backend on Google Cloud Run.",
                 "NextIntl is used to support multiple languages, Stripe is used for payment processing, Mailgun for email notifications and the website is fully responsive.",
             ],
-            demolink:"https://careercraft.pro/",
+            demolink:"https://proapply.ai/",
         },
         {
             title:"Fault Tolerant & Scalable SurfStore",
