@@ -95,11 +95,13 @@ function Topsection() {
                   {" "}
                   I majored in Electrical Engineering (Specializing in Machine
                   Learning and Control) at UCSD before transitioning into a MS
-                  student through the BS/MS program. Since then, I have combined
-                  my domain knowledge from academia as well as my curiosity for
-                  learning to tackle technical problems, increase business
-                  value, and improve customer experience. I continue to rapidly
-                  grow with a humble, confident, and open-minded attitude.{" "}
+                  student through the BS/MS program, where I earned a Master’s
+                  degree in Intelligent Systems, Robotics, and Control. Since
+                  then, I have combined my domain knowledge from academia as
+                  well as my curiosity for learning to tackle technical
+                  problems, increase business value, and improve customer
+                  experience. I continue to rapidly grow with a humble,
+                  confident, and open-minded attitude.{" "}
                 </p>
               </div>
             </div>
